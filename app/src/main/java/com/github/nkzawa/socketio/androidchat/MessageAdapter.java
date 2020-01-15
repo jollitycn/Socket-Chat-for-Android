@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import com.jollitycn.jwt.model.Message;
 
 import java.util.List;
 
@@ -43,8 +44,8 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
         Message message = mMessages.get(position);
-        viewHolder.setMessage(message.getMessage());
-        viewHolder.setUsername(message.getUsername());
+        viewHolder.setMessage(message.getContent());
+        viewHolder.setUsername(message.getFrom());
     }
 
     @Override

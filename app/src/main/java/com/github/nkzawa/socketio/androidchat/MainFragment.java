@@ -25,6 +25,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jollitycn.jwt.emit.EmitEvents;
+import com.jollitycn.jwt.model.Message;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -69,7 +71,7 @@ public class MainFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mAdapter = new MessageAdapter(context, mMessages);
-        if (context instanceof Activity){
+        if (context instanceof Activity) {
             //this.listener = (MainActivity) context;
         }
     }
@@ -83,15 +85,16 @@ public class MainFragment extends Fragment {
 
         ChatApplication app = (ChatApplication) getActivity().getApplication();
         mSocket = app.getSocket();
-        mSocket.on(Socket.EVENT_CONNECT,onConnect);
-        mSocket.on(Socket.EVENT_DISCONNECT,onDisconnect);
+        mSocket.on(Socket.EVENT_CONNECT, onConnect);
+        mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.on(Socket.EVENT_CONNECT_ERROR, onConnectError);
         mSocket.on(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
-        mSocket.on("new message", onNewMessage);
-        mSocket.on("user joined", onUserJoined);
-        mSocket.on("user left", onUserLeft);
-        mSocket.on("typing", onTyping);
-        mSocket.on("stop typing", onStopTyping);
+        // mSocket.off(EmitEvents.MESSAGE_NEW, onNewMessage);
+        mSocket.off(EmitEvents.GROUP_MSG_SEND, onNewMessage);
+        mSocket.off(EmitEvents.USER_JOINED, onUserJoined);
+        mSocket.off(EmitEvents.USER_LEFT, onUserLeft);
+        mSocket.off(EmitEvents.TYPING, onTyping);
+        mSocket.off(EmitEvents.TYPING_STOP, onStopTyping);
         mSocket.connect();
         startSignIn();
     }
@@ -112,11 +115,13 @@ public class MainFragment extends Fragment {
         mSocket.off(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.off(Socket.EVENT_CONNECT_ERROR, onConnectError);
         mSocket.off(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
-        mSocket.off("new message", onNewMessage);
-        mSocket.off("user joined", onUserJoined);
-        mSocket.off("user left", onUserLeft);
-        mSocket.off("typing", onTyping);
-        mSocket.off("stop typing", onStopTyping);
+        //mSocket.off(EmitEvents.ONLINE, onOnline);
+        // mSocket.off(EmitEvents.MESSAGE_NEW, onNewMessage);
+        mSocket.off(EmitEvents.GROUP_MSG_SEND, onNewMessage);
+        mSocket.off(EmitEvents.USER_JOINED, onUserJoined);
+        mSocket.off(EmitEvents.USER_LEFT, onUserLeft);
+        mSocket.off(EmitEvents.TYPING, onTyping);
+        mSocket.off(EmitEvents.TYPING_STOP, onStopTyping);
     }
 
     @Override
@@ -150,7 +155,7 @@ public class MainFragment extends Fragment {
 
                 if (!mTyping) {
                     mTyping = true;
-                    mSocket.emit("typing");
+                    mSocket.emit(EmitEvents.TYPING);
                 }
 
                 mTypingHandler.removeCallbacks(onTypingTimeout);
@@ -169,6 +174,7 @@ public class MainFragment extends Fragment {
                 attemptSend();
             }
         });
+
     }
 
     @Override
@@ -181,7 +187,7 @@ public class MainFragment extends Fragment {
 
         mUsername = data.getStringExtra("username");
         int numUsers = data.getIntExtra("numUsers", 1);
-
+        mSocket.emit(EmitEvents.USER_JOINED, mUsername);
         addLog(getResources().getString(R.string.message_welcome));
         addParticipantsLog(numUsers);
     }
@@ -209,7 +215,7 @@ public class MainFragment extends Fragment {
     }
 
     private void addLog(String message) {
-        mMessages.add(new Message.Builder(Message.TYPE_LOG)
+        mMessages.add(Message.createMessage(Message.TYPE_LOG)
                 .message(message).build());
         mAdapter.notifyItemInserted(mMessages.size() - 1);
         scrollToBottom();
@@ -220,14 +226,14 @@ public class MainFragment extends Fragment {
     }
 
     private void addMessage(String username, String message) {
-        mMessages.add(new Message.Builder(Message.TYPE_MESSAGE)
+        mMessages.add(Message.createMessage(Message.TYPE_MESSAGE)
                 .username(username).message(message).build());
         mAdapter.notifyItemInserted(mMessages.size() - 1);
         scrollToBottom();
     }
 
     private void addTyping(String username) {
-        mMessages.add(new Message.Builder(Message.TYPE_ACTION)
+        mMessages.add(Message.createMessage(Message.TYPE_ACTION)
                 .username(username).build());
         mAdapter.notifyItemInserted(mMessages.size() - 1);
         scrollToBottom();
@@ -236,7 +242,7 @@ public class MainFragment extends Fragment {
     private void removeTyping(String username) {
         for (int i = mMessages.size() - 1; i >= 0; i--) {
             Message message = mMessages.get(i);
-            if (message.getType() == Message.TYPE_ACTION && message.getUsername().equals(username)) {
+            if (message.getType() == Message.TYPE_ACTION && message.getFrom().equals(username)) {
                 mMessages.remove(i);
                 mAdapter.notifyItemRemoved(i);
             }
@@ -259,7 +265,8 @@ public class MainFragment extends Fragment {
         addMessage(mUsername, message);
 
         // perform the sending message attempt.
-        mSocket.emit("new message", message);
+        Message msg = Message.createMessage(Message.TYPE_MESSAGE).username(mUsername).message(message).build();
+        mSocket.emit(EmitEvents.GROUP_MSG_SEND, JsonConverter.objectToJSONObject(msg));
     }
 
     private void startSignIn() {
@@ -285,9 +292,9 @@ public class MainFragment extends Fragment {
             getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    if(!isConnected) {
-                        if(null!=mUsername)
-                            mSocket.emit("add user", mUsername);
+                    if (!isConnected) {
+                        if (null != mUsername)
+                            mSocket.emit(EmitEvents.USER_ADD, mUsername);
                         Toast.makeText(getActivity().getApplicationContext(),
                                 R.string.connect, Toast.LENGTH_LONG).show();
                         isConnected = true;
@@ -350,6 +357,7 @@ public class MainFragment extends Fragment {
         }
     };
 
+
     private Emitter.Listener onUserJoined = new Emitter.Listener() {
         @Override
         public void call(final Object... args) {
@@ -367,7 +375,7 @@ public class MainFragment extends Fragment {
                         return;
                     }
 
-                    addLog(getResources().getString(R.string.message_user_joined, username));
+                    addLog(getResources().getString(R.string.message_user_join, username));
                     addParticipantsLog(numUsers);
                 }
             });
@@ -443,9 +451,8 @@ public class MainFragment extends Fragment {
         @Override
         public void run() {
             if (!mTyping) return;
-
             mTyping = false;
-            mSocket.emit("stop typing");
+            mSocket.emit(EmitEvents.TYPING_STOP);
         }
     };
 }

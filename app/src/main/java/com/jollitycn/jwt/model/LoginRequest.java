@@ -1,4 +1,4 @@
-package com.github.nkzawa.socketio.androidchat;
+package com.jollitycn.jwt.model;
 
 import java.io.Serializable;
 
@@ -32,16 +32,19 @@ public class LoginRequest implements Serializable {
     private int code;
     private String body;
 
+    public int getNumUsers() {
+        return numUsers;
+    }
+
+    public void setNumUsers(int numUsers) {
+        this.numUsers = numUsers;
+    }
+
+    private int numUsers ;
     public LoginRequest() {
     }
 
-    @Override
-    public String toString() {
-        return "LoginRequest{" +
-                "code=" + code +
-                ", body='" + body + '\'' +
-                '}';
-    }
+
 
     public LoginRequest(int code, String body) {
         super();
@@ -63,5 +66,15 @@ public class LoginRequest implements Serializable {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    @Override
+    public String toString() {
+        return "LoginRequest{" +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", code=" + code +
+                ", body='" + body + '\'' +
+                '}';
     }
 }

@@ -14,14 +14,13 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.jollitycn.jwt.emit.EmitEvents;
+import com.jollitycn.jwt.model.LoginRequest;
 import io.socket.client.Ack;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 
 /**
@@ -63,13 +62,13 @@ public class LoginActivity extends Activity {
                 attemptLogin();
             }
         });
-        mSocket.on(Events.LOGIN, onLogin);
+        mSocket.on(EmitEvents.LOGIN, onLogin);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mSocket.off(Events.LOGIN, onLogin);
+        mSocket.off(EmitEvents.LOGIN, onLogin);
     }
 
     /**
@@ -99,11 +98,25 @@ public class LoginActivity extends Activity {
 
         LoginRequest message = new LoginRequest(12, "这是客户端消息体");
         message.setUserName(username);
-        mSocket.emit(Events.LOGIN, JsonConverter.objectToJSONObject(message), new Ack() {
+        mSocket.emit(EmitEvents.LOGIN, JsonConverter.objectToJSONObject(message), new Ack() {
             @Override
-            public void call(Object... args1) {
+            public void call(Object... args) {
                 Log.d("", "回执消息=" +
-                        args1);
+                        args);
+                JSONObject data = (JSONObject) args[0];
+                int numUsers;
+                try {
+                    numUsers = data.getInt("numUsers");
+                } catch (JSONException e) {
+                    return;
+                }
+
+                Intent intent = new Intent();
+                intent.putExtra("username", mUsername);
+                intent.putExtra("numUsers", numUsers);
+                setResult(RESULT_OK, intent);
+                finish();
+
             }
         });
         //   mSocket.emit(Events.CONNECT ,username);
