@@ -99,7 +99,7 @@ public class LoginActivity extends Activity {
 
         LoginRequest message = new LoginRequest(12, "这是客户端消息体");
         message.setUserName(username);
-        mSocket.emit(Events.LOGIN, message, new Ack() {
+        mSocket.emit(Events.LOGIN, JsonConverter.objectToJSONObject(message), new Ack() {
             @Override
             public void call(Object... args1) {
                 Log.d("", "回执消息=" +
