@@ -2,8 +2,11 @@ package com.github.nkzawa.socketio.androidchat;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -11,10 +14,14 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import io.socket.client.Ack;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 
 /**
@@ -56,15 +63,13 @@ public class LoginActivity extends Activity {
                 attemptLogin();
             }
         });
-
-        mSocket.on("login", onLogin);
+        mSocket.on(Events.LOGIN, onLogin);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-        mSocket.off("login", onLogin);
+        mSocket.off(Events.LOGIN, onLogin);
     }
 
     /**
@@ -91,7 +96,18 @@ public class LoginActivity extends Activity {
         mUsername = username;
 
         // perform the user login attempt.
-        mSocket.emit("add user", username);
+
+        LoginRequest message = new LoginRequest(12, "这是客户端消息体");
+        message.setUserName(username);
+        mSocket.emit(Events.LOGIN, message, new Ack() {
+            @Override
+            public void call(Object... args1) {
+                Log.d("", "回执消息=" +
+                        args1);
+            }
+        });
+        //   mSocket.emit(Events.CONNECT ,username);
+        //mSocket.emit(Events.ONLINE ,username);
     }
 
     private Emitter.Listener onLogin = new Emitter.Listener() {
