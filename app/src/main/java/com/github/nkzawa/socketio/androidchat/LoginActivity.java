@@ -2,9 +2,7 @@ package com.github.nkzawa.socketio.androidchat;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -15,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.jollitycn.jwt.emit.EmitEvents;
-import com.jollitycn.jwt.model.LoginRequest;
+import com.jollitycn.jwt.model.UserInfo;
 import io.socket.client.Ack;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -62,13 +60,13 @@ public class LoginActivity extends Activity {
                 attemptLogin();
             }
         });
-        mSocket.on(EmitEvents.LOGIN, onLogin);
+        mSocket.on(EmitEvents.USER_ADD, onLogin);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        mSocket.off(EmitEvents.LOGIN, onLogin);
+        mSocket.off(EmitEvents.USER_ADD, onLogin);
     }
 
     /**
@@ -96,9 +94,9 @@ public class LoginActivity extends Activity {
 
         // perform the user login attempt.
 
-        LoginRequest message = new LoginRequest(12, "这是客户端消息体");
+        UserInfo message = new UserInfo();
         message.setUserName(username);
-        mSocket.emit(EmitEvents.LOGIN, JsonConverter.objectToJSONObject(message), new Ack() {
+        mSocket.emit(EmitEvents.USER_ADD, JsonConverter.objectToJSONObject(message), new Ack() {
             @Override
             public void call(Object... args) {
                 Log.d("", "回执消息=" +
@@ -106,13 +104,13 @@ public class LoginActivity extends Activity {
                 JSONObject data = (JSONObject) args[0];
                 int numUsers;
                 try {
-                    numUsers = data.getInt("numUsers");
+                    numUsers = data.getInt("count");
                 } catch (JSONException e) {
                     return;
                 }
 
                 Intent intent = new Intent();
-                intent.putExtra("username", mUsername);
+                intent.putExtra("userName", mUsername);
                 intent.putExtra("numUsers", numUsers);
                 setResult(RESULT_OK, intent);
                 finish();
@@ -130,13 +128,13 @@ public class LoginActivity extends Activity {
 
             int numUsers;
             try {
-                numUsers = data.getInt("numUsers");
+                numUsers = data.getInt("count");
             } catch (JSONException e) {
                 return;
             }
 
             Intent intent = new Intent();
-            intent.putExtra("username", mUsername);
+            intent.putExtra("userName", mUsername);
             intent.putExtra("numUsers", numUsers);
             setResult(RESULT_OK, intent);
             finish();

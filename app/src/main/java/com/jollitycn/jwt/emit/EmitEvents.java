@@ -11,13 +11,13 @@ import java.util.logging.Logger;
 public class EmitEvents {
 
     private static final Logger logger = Logger.getLogger(EmitEvents.class.getName());
-    public static final String LOGIN ="login" ;
+    //public static final String LOGIN ="login" ;
     public static final String USER_ADD = "user_add";
 //    public static final String ONLINE ="online" ;
     public static final String CONNECT = "connect";
     public static final String MESSAGE_NEW = "message";
-    public static final String GROUP_MSG_SEND = "group_msg_send";
-    public static final String GROUP_MSG_RECEIVED = "group_msg_received";
+//    public static final String GROUP_MSG_SEND = "group_msg_send";
+//    public static final String GROUP_MSG_RECEIVED = "group_msg_received";
     public static final String USER_JOINED = "user_join";
     public static final String USER_LEFT = "user_left";
     public static final String TYPING = "typing";

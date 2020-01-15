@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 import com.jollitycn.jwt.emit.EmitEvents;
 import com.jollitycn.jwt.model.Message;
+import com.jollitycn.jwt.model.UserInfo;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -89,12 +90,14 @@ public class MainFragment extends Fragment {
         mSocket.on(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.on(Socket.EVENT_CONNECT_ERROR, onConnectError);
         mSocket.on(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
+        mSocket.on(Socket.EVENT_RECONNECT, onReconnect);
         // mSocket.off(EmitEvents.MESSAGE_NEW, onNewMessage);
-        mSocket.off(EmitEvents.GROUP_MSG_SEND, onNewMessage);
-        mSocket.off(EmitEvents.USER_JOINED, onUserJoined);
-        mSocket.off(EmitEvents.USER_LEFT, onUserLeft);
-        mSocket.off(EmitEvents.TYPING, onTyping);
-        mSocket.off(EmitEvents.TYPING_STOP, onStopTyping);
+
+        mSocket.on(EmitEvents.MESSAGE_NEW, onNewMessage);
+        mSocket.on(EmitEvents.USER_JOINED, onUserJoined);
+        mSocket.on(EmitEvents.USER_LEFT, onUserLeft);
+        mSocket.on(EmitEvents.TYPING, onTyping);
+        mSocket.on(EmitEvents.TYPING_STOP, onStopTyping);
         mSocket.connect();
         startSignIn();
     }
@@ -115,9 +118,10 @@ public class MainFragment extends Fragment {
         mSocket.off(Socket.EVENT_DISCONNECT, onDisconnect);
         mSocket.off(Socket.EVENT_CONNECT_ERROR, onConnectError);
         mSocket.off(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
+        mSocket.off(Socket.EVENT_RECONNECT, onReconnect);
         //mSocket.off(EmitEvents.ONLINE, onOnline);
         // mSocket.off(EmitEvents.MESSAGE_NEW, onNewMessage);
-        mSocket.off(EmitEvents.GROUP_MSG_SEND, onNewMessage);
+        mSocket.off(EmitEvents.MESSAGE_NEW, onNewMessage);
         mSocket.off(EmitEvents.USER_JOINED, onUserJoined);
         mSocket.off(EmitEvents.USER_LEFT, onUserLeft);
         mSocket.off(EmitEvents.TYPING, onTyping);
@@ -185,7 +189,7 @@ public class MainFragment extends Fragment {
             return;
         }
 
-        mUsername = data.getStringExtra("username");
+        mUsername = data.getStringExtra("userName");
         int numUsers = data.getIntExtra("numUsers", 1);
         mSocket.emit(EmitEvents.USER_JOINED, mUsername);
         addLog(getResources().getString(R.string.message_welcome));
@@ -266,7 +270,7 @@ public class MainFragment extends Fragment {
 
         // perform the sending message attempt.
         Message msg = Message.createMessage(Message.TYPE_MESSAGE).username(mUsername).message(message).build();
-        mSocket.emit(EmitEvents.GROUP_MSG_SEND, JsonConverter.objectToJSONObject(msg));
+        mSocket.emit(EmitEvents.MESSAGE_NEW, JsonConverter.objectToJSONObject(msg));
     }
 
     private void startSignIn() {
@@ -293,8 +297,11 @@ public class MainFragment extends Fragment {
                 @Override
                 public void run() {
                     if (!isConnected) {
-                        if (null != mUsername)
-                            mSocket.emit(EmitEvents.USER_ADD, mUsername);
+                        if (null != mUsername) {
+                            UserInfo message = new UserInfo();
+                            message.setUserName(mUsername);
+                            mSocket.emit(EmitEvents.USER_ADD, JsonConverter.objectToJSONObject(message));
+                        }
                         Toast.makeText(getActivity().getApplicationContext(),
                                 R.string.connect, Toast.LENGTH_LONG).show();
                         isConnected = true;
@@ -318,7 +325,20 @@ public class MainFragment extends Fragment {
             });
         }
     };
-
+    private Emitter.Listener onReconnect = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Log.i(TAG, "reconnect");
+                    isConnected = false;
+                    Toast.makeText(getActivity().getApplicationContext(),
+                            R.string.reconnect, Toast.LENGTH_LONG).show();
+                }
+            });
+        }
+    };
     private Emitter.Listener onConnectError = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
@@ -343,8 +363,8 @@ public class MainFragment extends Fragment {
                     String username;
                     String message;
                     try {
-                        username = data.getString("username");
-                        message = data.getString("message");
+                        username = data.getString("from");
+                        message = data.getString("content");
                     } catch (JSONException e) {
                         Log.e(TAG, e.getMessage());
                         return;
@@ -368,8 +388,8 @@ public class MainFragment extends Fragment {
                     String username;
                     int numUsers;
                     try {
-                        username = data.getString("username");
-                        numUsers = data.getInt("numUsers");
+                        username = data.getString("userName");
+                        numUsers = data.getInt("count");
                     } catch (JSONException e) {
                         Log.e(TAG, e.getMessage());
                         return;
@@ -392,13 +412,12 @@ public class MainFragment extends Fragment {
                     String username;
                     int numUsers;
                     try {
-                        username = data.getString("username");
-                        numUsers = data.getInt("numUsers");
+                        username = data.getString("userName");
+                        numUsers = data.getInt("count");
                     } catch (JSONException e) {
                         Log.e(TAG, e.getMessage());
                         return;
                     }
-
                     addLog(getResources().getString(R.string.message_user_left, username));
                     addParticipantsLog(numUsers);
                     removeTyping(username);
@@ -416,7 +435,7 @@ public class MainFragment extends Fragment {
                     JSONObject data = (JSONObject) args[0];
                     String username;
                     try {
-                        username = data.getString("username");
+                        username = data.getString("userName");
                     } catch (JSONException e) {
                         Log.e(TAG, e.getMessage());
                         return;
@@ -436,7 +455,7 @@ public class MainFragment extends Fragment {
                     JSONObject data = (JSONObject) args[0];
                     String username;
                     try {
-                        username = data.getString("username");
+                        username = data.getString("userName");
                     } catch (JSONException e) {
                         Log.e(TAG, e.getMessage());
                         return;

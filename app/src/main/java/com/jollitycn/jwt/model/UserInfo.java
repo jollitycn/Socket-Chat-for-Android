@@ -1,6 +1,18 @@
 package com.jollitycn.jwt.model;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable {
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    private int count;
     private String userName;
     private String password;
 

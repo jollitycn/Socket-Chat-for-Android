@@ -15,7 +15,19 @@ import java.util.Date;
  */
 
 public class Message implements Serializable {
+    public String[] emojis = new String[]{"😂", "🙏", "😄", "😏",
+            "😇", "😅", "😌", "😘", "😍", "🤓", "😜", "😎", "😊", "😳", "🙄", "😱", "😒", "😔", "😷", "👿",
+            "🤗", "😩", "😤", "😣", "😰", "😴", "😬", "😭", "👻", "👍", "✌️", "👉", "👀", "🐶", "🐷", "😹", "⚡️", "🔥", "🌈", "🍏", "⚽️", "❤️", "🇨🇳"};
 
+    public int getUserCount() {
+        return userCount;
+    }
+
+    public void setUserCount(int userCount) {
+        this.userCount = userCount;
+    }
+
+    private int userCount;
     public static final int TYPE_MESSAGE = 0;
     public static final int TYPE_LOG = 1;
     public static final int TYPE_ACTION = 2;
@@ -35,7 +47,7 @@ public class Message implements Serializable {
     }
 
     public static Message createMessage(int typeMessage) {
-        Message message =  new Message();
+        Message message = new Message();
         message.type = typeMessage;
         return message;
     }
@@ -136,17 +148,11 @@ public class Message implements Serializable {
         this.content = content;
     }
 
-
     private String room;
-
     private String avatarUrl;
     private String from;
     private String loc;
-
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date date;
-
     private String content;
-
-
 }
