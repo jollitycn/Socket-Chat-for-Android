@@ -1,0 +1,129 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:recyclerview-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\f5988d752ef06e3894cc506cee4f55ce\recyclerview-v7-25.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\462cb77039dc0ff9c830f93661e1c9ae\support-v4-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\76d5c91efa259eb57f29b33c2b353c4e\animated-vector-drawable-25.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c4a25781e53ace81a647d502a3cc3aed\support-vector-drawable-25.0.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2c34315d4b2750d11fab89a19cb1963b\support-fragment-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\126335fd65d1012e6ed9acd915b1f6be\support-core-ui-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\01ccc16dbca9dff9ecebced212c72031\support-media-compat-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c75123b0748d5ddf0f70c4c988fe7f18\support-core-utils-25.0.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\d7eda0d4b41fc390249a9411bbbf9bb6\support-compat-25.0.1\AndroidManifest.xml:17:1-27:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:3:5-53
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:1-29:12
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:5:22-64
+application
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:7:5-27:19
+MERGED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\462cb77039dc0ff9c830f93661e1c9ae\support-v4-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\462cb77039dc0ff9c830f93661e1c9ae\support-v4-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\76d5c91efa259eb57f29b33c2b353c4e\animated-vector-drawable-25.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\76d5c91efa259eb57f29b33c2b353c4e\animated-vector-drawable-25.0.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c4a25781e53ace81a647d502a3cc3aed\support-vector-drawable-25.0.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c4a25781e53ace81a647d502a3cc3aed\support-vector-drawable-25.0.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2c34315d4b2750d11fab89a19cb1963b\support-fragment-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2c34315d4b2750d11fab89a19cb1963b\support-fragment-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\126335fd65d1012e6ed9acd915b1f6be\support-core-ui-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\126335fd65d1012e6ed9acd915b1f6be\support-core-ui-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\01ccc16dbca9dff9ecebced212c72031\support-media-compat-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\01ccc16dbca9dff9ecebced212c72031\support-media-compat-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c75123b0748d5ddf0f70c4c988fe7f18\support-core-utils-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c75123b0748d5ddf0f70c4c988fe7f18\support-core-utils-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\d7eda0d4b41fc390249a9411bbbf9bb6\support-compat-25.0.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\d7eda0d4b41fc390249a9411bbbf9bb6\support-compat-25.0.1\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:10:9-45
+	android:allowBackup
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:12:9-40
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:9:9-78
+activity#com.github.nkzawa.socketio.androidchat.MainActivity
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:13:9-20:20
+	android:label
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:15:13-45
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:14:13-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:16:13-19:29
+action#android.intent.action.MAIN
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:18:27-74
+activity#com.github.nkzawa.socketio.androidchat.LoginActivity
+ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:21:9-26:20
+	android:label
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:23:13-57
+	android:windowSoftInputMode
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:25:13-68
+	android:theme
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:24:13-51
+	android:name
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:22:13-80
+uses-sdk
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\f5988d752ef06e3894cc506cee4f55ce\recyclerview-v7-25.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\f5988d752ef06e3894cc506cee4f55ce\recyclerview-v7-25.0.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\462cb77039dc0ff9c830f93661e1c9ae\support-v4-25.0.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\462cb77039dc0ff9c830f93661e1c9ae\support-v4-25.0.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\76d5c91efa259eb57f29b33c2b353c4e\animated-vector-drawable-25.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\76d5c91efa259eb57f29b33c2b353c4e\animated-vector-drawable-25.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c4a25781e53ace81a647d502a3cc3aed\support-vector-drawable-25.0.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-vector-drawable:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c4a25781e53ace81a647d502a3cc3aed\support-vector-drawable-25.0.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-fragment:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2c34315d4b2750d11fab89a19cb1963b\support-fragment-25.0.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2c34315d4b2750d11fab89a19cb1963b\support-fragment-25.0.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\126335fd65d1012e6ed9acd915b1f6be\support-core-ui-25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\126335fd65d1012e6ed9acd915b1f6be\support-core-ui-25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\01ccc16dbca9dff9ecebced212c72031\support-media-compat-25.0.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\01ccc16dbca9dff9ecebced212c72031\support-media-compat-25.0.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c75123b0748d5ddf0f70c4c988fe7f18\support-core-utils-25.0.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\c75123b0748d5ddf0f70c4c988fe7f18\support-core-utils-25.0.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\d7eda0d4b41fc390249a9411bbbf9bb6\support-compat-25.0.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\d7eda0d4b41fc390249a9411bbbf9bb6\support-compat-25.0.1\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.1] D:\dev\gradle\caches\transforms-2\files-2.1\2eb08f6168326023f1424a8832700db4\appcompat-v7-25.0.1\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		ADDED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4a77cb16-a7a6-4f17-a2a9-0500106751a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/Constants.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="N8K5T17510004585" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1WO605xYpJhIz0Z9vcbNEZ2HBTC" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/com/jollitycn/jwt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../../../../springboot-web" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jollitycn.jwt.model" />
+      <recent name="com.jollitycn.jwt.emit" />
+      <recent name="com.github.nkzawa.socketio.androidchat.emit" />
+      <recent name="com.github.nkzawa.socketio.androidchat" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\java\com" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <Java />
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a77cb16-a7a6-4f17-a2a9-0500106751a0" name="Default Changelist" comment="" />
+      <created>1579008067318</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579008067318</updated>
+      <workItem from="1579008073936" duration="19000" />
+      <workItem from="1579058452153" duration="3040000" />
+      <workItem from="1579066681695" duration="366000" />
+      <workItem from="1579067087506" duration="16506000" />
+      <workItem from="1579155009310" duration="2855000" />
+    </task>
+    <task id="LOCAL-00001" summary="update to my socket server">
+      <created>1579066767728</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579066767728</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update to my socket server">
+      <created>1579068131954</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579068131954</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update to my socket server">
+      <created>1579075942414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579075942414</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update to my socket server">
+      <created>1579089253815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579089253815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update to my socket server" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to my socket server" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="168" key="#Notifications" timestamp="1579066406756">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="552" y="168" key="#Notifications/0.0.1920.1019@0.0.1920.1019" timestamp="1579066406756" />
+    <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579065907677">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="414" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579065907677" />
+    <state x="765" y="194" key="#com.intellij.ide.util.MemberChooser" timestamp="1579077324481">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="765" y="194" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1019@0.0.1920.1019" timestamp="1579077324481" />
+    <state x="790" y="419" key="#com.intellij.refactoring.replaceConstructorWithFactory.ReplaceConstructorWithFactoryDialog" timestamp="1579073286176">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="790" y="419" key="#com.intellij.refactoring.replaceConstructorWithFactory.ReplaceConstructorWithFactoryDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579073286176" />
+    <state x="690" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579077824632">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="690" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579077824632" />
+    <state x="273" y="103" key="CommitChangelistDialog2" timestamp="1579089252588">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="273" y="103" key="CommitChangelistDialog2/0.0.1920.1019@0.0.1920.1019" timestamp="1579089252588" />
+    <state width="417" height="466" key="DebuggerActiveHint" timestamp="1579081444106">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="417" height="466" key="DebuggerActiveHint/0.0.1920.1019@0.0.1920.1019" timestamp="1579081444106" />
+    <state x="740" y="265" key="FileChooserDialogImpl" timestamp="1579082424589">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="740" y="265" key="FileChooserDialogImpl/0.0.1920.1019@0.0.1920.1019" timestamp="1579082424589" />
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom" timestamp="1579089265547">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.0.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265547" />
+    <state width="1877" height="324" key="GridCell.Tab.0.center" timestamp="1579089265547">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.0.center/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265547" />
+    <state width="1877" height="324" key="GridCell.Tab.0.left" timestamp="1579089265547">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.0.left/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265547" />
+    <state width="1877" height="324" key="GridCell.Tab.0.right" timestamp="1579089265547">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.0.right/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265547" />
+    <state width="1877" height="324" key="GridCell.Tab.1.bottom" timestamp="1579089265548">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.1.bottom/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265548" />
+    <state width="1877" height="324" key="GridCell.Tab.1.center" timestamp="1579089265548">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.1.center/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265548" />
+    <state width="1877" height="324" key="GridCell.Tab.1.left" timestamp="1579089265547">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.1.left/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265547" />
+    <state width="1877" height="324" key="GridCell.Tab.1.right" timestamp="1579089265548">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state width="1877" height="324" key="GridCell.Tab.1.right/0.0.1920.1019@0.0.1920.1019" timestamp="1579089265548" />
+    <state x="184" y="90" key="MergeDialog" timestamp="1579066822658">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="184" y="90" key="MergeDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579066822658" />
+    <state x="669" y="225" key="MultipleFileMergeDialog" timestamp="1579066830291">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="669" y="225" key="MultipleFileMergeDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579066830291" />
+    <state x="461" y="152" key="SettingsEditor" timestamp="1579067045998">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="461" y="152" key="SettingsEditor/0.0.1920.1019@0.0.1920.1019" timestamp="1579067045998" />
+    <state x="552" y="243" key="Vcs.Push.Dialog.v2" timestamp="1579155082833">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="552" y="243" key="Vcs.Push.Dialog.v2/0.0.1920.1019@0.0.1920.1019" timestamp="1579155082833" />
+    <state x="759" y="287" key="chooseDestDirectoryDialog" timestamp="1579072849451">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="759" y="287" key="chooseDestDirectoryDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579072849451" />
+    <state x="640" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1579067105590">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="640" y="334" key="com.intellij.ide.util.TipDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579067105590" />
+    <state x="567" y="209" width="809" height="600" key="find.popup" timestamp="1579078825456">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="567" y="209" width="809" height="600" key="find.popup/0.0.1920.1019@0.0.1920.1019" timestamp="1579078825456" />
+    <state x="471" y="301" key="git4idea.merge.GitPullDialog" timestamp="1579066783173">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="471" y="301" key="git4idea.merge.GitPullDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579066783173" />
+    <state x="661" y="137" key="refactoring.ChangeSignatureDialog" timestamp="1579073408436">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="661" y="137" key="refactoring.ChangeSignatureDialog/0.0.1920.1019@0.0.1920.1019" timestamp="1579073408436" />
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup" timestamp="1579070927578">
+      <screen x="0" y="0" width="1920" height="1019" />
+    </state>
+    <state x="623" y="219" width="672" height="678" key="search.everywhere.popup/0.0.1920.1019@0.0.1920.1019" timestamp="1579070927578" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/github/nkzawa/socketio/androidchat/LoginActivity.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

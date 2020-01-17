@@ -1,0 +1,60 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.github.nkzawa.socketio.androidchat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="25" />
+9-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:7:5-27:19
+14        android:name="com.github.nkzawa.socketio.androidchat.ChatApplication"
+14-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:9:9-78
+15        android:allowBackup="true"
+15-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:8:9-35
+16        android:debuggable="true"
+17        android:icon="@drawable/ic_launcher"
+17-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:10:9-45
+18        android:label="@string/app_name"
+18-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:11:9-41
+19        android:theme="@style/AppTheme" >
+19-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:12:9-40
+20        <activity
+20-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:13:9-20:20
+21            android:name="com.github.nkzawa.socketio.androidchat.MainActivity"
+21-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:14:13-79
+22            android:label="@string/app_name" >
+22-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:15:13-45
+23            <intent-filter>
+23-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:16:13-19:29
+24                <action android:name="android.intent.action.MAIN" />
+24-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:17:17-69
+24-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:17:25-66
+25
+26                <category android:name="android.intent.category.LAUNCHER" />
+26-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:18:17-77
+26-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:18:27-74
+27            </intent-filter>
+28        </activity>
+29        <activity
+29-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:21:9-26:20
+30            android:name="com.github.nkzawa.socketio.androidchat.LoginActivity"
+30-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:22:13-80
+31            android:label="@string/title_activity_login"
+31-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:23:13-57
+32            android:theme="@style/Theme.AppCompat"
+32-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:24:13-51
+33            android:windowSoftInputMode="adjustResize|stateVisible" >
+33-->D:\ProjectData\ism\ism-framework\springboot-socketio\src\test\java\com\jollitycn\jwt\socket\client\android\socket.io-android-chat\app\src\main\AndroidManifest.xml:25:13-68
+34        </activity>
+35    </application>
+36
+37</manifest>
